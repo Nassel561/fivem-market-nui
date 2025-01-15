@@ -1,7 +1,7 @@
 # Fivem Butik Med Kundvagnsfunktion
 Detta är en enkel butik byggd med **HTML**, **CSS** och **JavaScript**. Den gör det möjligt för att köpa produkter, lägga till dem i kundvagnen och justera kvantiteter. Kundvagnen uppdateras automatiskt när artiklar läggs till eller tas bort. Totalkostnaden beräknas och visas i kundvagnen.
 
-![Butik NUI](https://ibb.co/Z2KmvWQ)
+![Butik NUI](https://i.ibb.co/FHJVcgQ/image.png)
 
 ## Funktioner
 
