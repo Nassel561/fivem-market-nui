@@ -1,0 +1,201 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('zorro3.png') no-repeat center center fixed; /* Lägg till bakgrundsbild */
+    background-size: cover; /* Gör så att bilden täcker hela bakgrunden */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.store, .cart {
+    width: 48%;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-right: 4%;
+}
+
+.cart h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    height: calc(100% - 40px);
+    margin-top: 20px;
+}
+
+.item {
+    background-color: #444444;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.item:hover {
+    background-color: #555555;
+}
+
+.item img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 60px; 
+    color: #ffffff;
+}
+
+.item-price {
+    font-size: 14px;
+    color: #007bff;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.cart {
+    width: 25%;
+    padding: 20px;
+    background-color: #444444;
+    position: relative;
+}
+
+.cart-actions {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444444;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cart-item img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-item-name {
+    flex-grow: 1;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.cart-item-price {
+    color: #007bff;
+    font-size: 12px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.clear-btn {
+    background-color: #ff4d4d;
+}
+
+.clear-btn:hover {
+    background-color: #cc0000;
+}
+
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.cart-item-actions button {
+    background-color: #555555;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.cart-item-actions button:hover {
+    background-color: #666666;
+}
+
+.cart-item-actions button:focus {
+    outline: none;
+}
+
+#total-cost {
+    position: absolute;
+    right: 40px; 
+    bottom: 10px; 
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
